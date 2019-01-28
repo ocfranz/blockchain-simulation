@@ -54,6 +54,7 @@ class BlockChain{
 }
 
 
+
 let ownChain = new BlockChain('Data Genesis', '000');
 ownChain.addBlock('Block 1');
 ownChain.addBlock('Block 2');
