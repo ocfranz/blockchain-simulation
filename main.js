@@ -1,4 +1,6 @@
 const SHA256 = require('crypto-js/sha256');
+const express = require('express');
+
 
 class Block{
     constructor(index, data, previousHash=''){
@@ -53,9 +55,17 @@ class BlockChain{
     }
 }
 
+const server = express();
+server.get("/", function(req, res){
+    res.send("<h1>Welcome</h1>");
+    res.end();
+})
+server.listen(3000, function(){
+    console.log("Server up using ort 3000");
+})
 
-
+/*
 let ownChain = new BlockChain('Data Genesis', '000');
 ownChain.addBlock('Block 1');
 ownChain.addBlock('Block 2');
-console.log(JSON.stringify(ownChain.chain, null, 2));
+console.log(JSON.stringify(ownChain.chain, null, 2));*/
