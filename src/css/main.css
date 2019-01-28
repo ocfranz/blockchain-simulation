@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+.container{
+    margin: 3rem 10rem;
+}
+.title{
+    background-color: #F8E71E;
+    display: inline;
+}
+.btn-add{
+    display: inline;
+
+    padding: .5rem 2rem;
+    border:1px solid #F4F4F4F4;
+}
+.chain-container{
+    display: flex;
+}
+.block{
+    height:10rem;
+    width: 100%;
+    border:1px solid  #273A6A;
+    
+}
+.block span{
+    display: block;
+    margin:.9rem 0 0 2.5rem ;
+    font-size: 18px;
+}

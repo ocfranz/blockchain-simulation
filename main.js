@@ -1,6 +1,6 @@
 const SHA256 = require('crypto-js/sha256');
 const express = require('express');
-
+const router = require('./routes');
 
 class Block{
     constructor(index, data, previousHash=''){
@@ -55,14 +55,18 @@ class BlockChain{
     }
 }
 
-const server = express();
-server.get("/", function(req, res){
-    res.send("<h1>Welcome</h1>");
-    res.end();
-})
-server.listen(3000, function(){
-    console.log("Server up using ort 3000");
-})
+const app = express();
+
+app.set("appName","Blockchain-simulation");
+app.set("views", __dirname + "/views");
+app.set(express.static(__dirname +"/src") )
+//view engine
+app.set("view engine","pug")
+app.use(express.static('src'));
+app.use(router);
+app.listen(3000, function(){
+    console.log("Server up using port 3000");
+});
 
 /*
 let ownChain = new BlockChain('Data Genesis', '000');

@@ -2,7 +2,8 @@
   "name": "blockchain-simulation",
   "dependencies": {
     "crypto-js": "^3.1.9-1",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "pug": "^2.0.3"
   },
   "description": "Simulation using concepts behind Blockchain",
   "version": "1.0.0",

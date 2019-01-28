@@ -1,0 +1,24 @@
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='/css/main.css')
+    title Blockchain Simulation
+  body
+    div(class="container")
+        h1(class="title") Blockchain Simulation
+        span 
+            a(type="button", onclick="" class="btn-add") Add Block
+
+    div(class="chain")
+        div(class="container")
+            div(class="chain-container")
+                div(class="block")
+                    span(id="data") Data :
+                    span(id="hash") Hash :
+                    span(id="prev-hash") Previuos Hash :
+                    span(id="nonce") Nonce :
+
+    script(src="/js/main.js")
+
+    
