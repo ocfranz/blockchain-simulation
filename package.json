@@ -1,0 +1,7 @@
+{
+  "name": "",
+  "version": "",
+  "dependencies": {
+    "crypto-js": "^3.1.9-1"
+  }
+}
